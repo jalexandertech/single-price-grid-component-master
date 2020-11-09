@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* END OF CSS RESET */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.pricing-intro {
+    padding: 25px 20px;
+}
+
+#pricing-community {
+    color: hsl(179, 62%, 43%);
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.money-back {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 13px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+p:last-child {
+    color: hsl(218, 22%, 67%);
+    font-size: 11px;
+    line-height: 20px;
+}
+
+.subscription {
+    padding: 25px 20px;
+    background-color: hsl(179, 62%, 43%);
+    color: #ffffff;
+}
+
+.subscription h1 {
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+span {
+    font-size: 25px;
+    font-weight: 700;
+    padding-right: 10px;
+    color: #ffffff;
+}
+
+.subscription p:nth-of-type(1) {
+    padding-bottom: 10px;
+    font-size: 11px;
+    color: hsla(203, 44%, 93%, 0.747);
+}
+
+.subscription p:nth-of-type(2) {
+    padding-bottom: 35px;
+    font-size: 12px;
+    color: hsl(204, 43%, 93%);
+}
+
+.subscription a {
+    text-decoration: none;
+    border: 1px solid hsl(71, 73%, 54%);
+    border-radius: 4px;
+    color: white;
+    font-size: 13px;
+    padding: 10px 80px;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 1px 0 5px hsl(179, 65%, 37%);
+}
+
+a:hover, a:focus {
+    background-color: hsl(71, 73%, 54%);
+}
+
+.pricing-features {
+    padding: 15px 20px;
+    background-color: hsl(179, 50%, 58%);
+    color: #ffffff;
+}
+
+.pricing-features h1{
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+li{
+    padding-bottom: 5px;
+    font-size: 10px;
+    color:hsl(204, 43%, 93%)
+}
+.attribution {
+    font-size: 8px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
