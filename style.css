@@ -51,15 +51,20 @@ html {
 body {
     background-color: hsl(204, 43%, 93%);
     min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
+
+
 
 .panel {
     background-color: white;
     border-radius: 10px;
     width: 70%;
-    max-width: 960px;
+    min-width: 375px;
+    max-width: 683px;
     display: flex;
-    justify-content: center;
+    
     flex-direction: column;
     margin: 0 auto;
 }
@@ -103,7 +108,7 @@ p:last-child {
 span {
     font-size: 25px;
     font-weight: 700;
-    padding-right: 10px;
+    padding-right: 8px;
     color: #ffffff;
 }
 
@@ -141,16 +146,17 @@ a:hover, a:focus {
     color: #ffffff;
 }
 
-.pricing-features h1{
+.pricing-features h1 {
     font-weight: 700;
     padding-bottom: 15px;
 }
 
-li{
+li {
     padding-bottom: 5px;
     font-size: 10px;
-    color:hsl(204, 43%, 93%)
+    color: hsl(204, 43%, 93%)
 }
+
 .attribution {
     font-size: 8px;
     text-align: center;
@@ -158,4 +164,26 @@ li{
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 683px) {
+    
+    .panel {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .pricing-intro {
+        padding-right: 95px;
+        flex: 2 500px;
+    }
+    .subscription, .pricing-features{
+        padding: 40px 25px;
+        
+        flex: 1;
+    }
+    .subscription a {
+        padding: 10px 70px;
+    }
+
+    
 }
